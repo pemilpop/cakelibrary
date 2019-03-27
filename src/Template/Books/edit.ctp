@@ -15,6 +15,8 @@
         ?></li>
         <li><?= $this->Html->link(__('New Author'), ['controller' => 'Authors', 'action' => 'add']) ?></li>
     </ul>
+     <?php  $cell = $this->cell('Posts'); ?>
+    <?= $cell ?>
 </nav>
 <div class="books form large-9 medium-8 columns content">
     <?= $this->Form->create($book) ?>
