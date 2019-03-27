@@ -12,6 +12,8 @@
         <li><?= $this->Html->link(__('New Book'), ['action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('New Author'), ['controller' => 'Authors', 'action' => 'add']) ?> </li>
     </ul>
+     <?php  $cell = $this->cell('Posts'); ?>
+    <?= $cell ?>
 </nav>
 <div class="books view large-9 medium-8 columns content">
     <h3><?= h($book->title) ?></h3>
